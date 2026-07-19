@@ -21,15 +21,15 @@ export async function opsRoutes(fastify: FastifyInstance): Promise<void> {
   // Shared preHandler for all ops routes
   const opsAuth = [staffRateLimit, authenticateJWT, requireRole('staff', 'admin')];
 
-  fastify.get('/crowd', { preHandler: opsAuth }, handleGetCrowd);
+  fastify.get('/crowd', { preHandler: opsAuth }, handleGetCrowd as any);
 
   fastify.post(
     '/alert',
     { preHandler: [...opsAuth, validateBody(opsAlertSchema)] },
-    handlePostAlert,
+    handlePostAlert as any,
   );
 
-  fastify.get('/recommendations', { preHandler: opsAuth }, handleGetRecommendations);
+  fastify.get('/recommendations', { preHandler: opsAuth }, handleGetRecommendations as any);
 
-  fastify.get('/alerts/log', { preHandler: opsAuth }, handleGetAlertLog);
+  fastify.get('/alerts/log', { preHandler: opsAuth }, handleGetAlertLog as any);
 }

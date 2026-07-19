@@ -8,10 +8,10 @@ import { env } from '../config/env';
 
 /** Typed wrapper around lru-cache with TTL support */
 class CacheService {
-  private readonly cache: LRUCache<string, unknown>;
+  private readonly cache: LRUCache<string, any>;
 
   constructor() {
-    this.cache = new LRUCache({
+    this.cache = new LRUCache<string, any>({
       max: env.LRU_CACHE_MAX_SIZE,
       ttl: env.LRU_CACHE_TTL_MS,
     });

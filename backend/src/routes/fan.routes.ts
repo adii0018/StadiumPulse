@@ -22,7 +22,7 @@ export async function fanRoutes(fastify: FastifyInstance): Promise<void> {
         validateBody(fanChatSchema),
       ],
     },
-    handleFanChat,
+    handleFanChat as any,
   );
 
   fastify.post(
@@ -34,8 +34,8 @@ export async function fanRoutes(fastify: FastifyInstance): Promise<void> {
         validateBody(fanNavigateSchema),
       ],
     },
-    handleFanNavigate,
+    handleFanNavigate as any,
   );
 
-  fastify.get('/accessibility', { preHandler: [publicRateLimit, validateQuery(fanAccessibilitySchema)] }, handleFanAccessibility);
+  fastify.get('/accessibility', { preHandler: [publicRateLimit, validateQuery(fanAccessibilitySchema)] }, handleFanAccessibility as any);
 }

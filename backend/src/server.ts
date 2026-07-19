@@ -113,7 +113,7 @@ async function buildServer(): Promise<void> {
         if (socket.readyState === socket.OPEN) {
           const msg: WSMessage = {
             type: 'crowd_update',
-            payload: snapshots,
+            payload: snapshots as any,
             timestamp: Date.now(),
           };
           socket.send(JSON.stringify(msg));
@@ -125,7 +125,7 @@ async function buildServer(): Promise<void> {
         if (socket.readyState === socket.OPEN) {
           const msg: WSMessage = {
             type: 'alert',
-            payload: alert,
+            payload: alert as any,
             timestamp: Date.now(),
           };
           socket.send(JSON.stringify(msg));
