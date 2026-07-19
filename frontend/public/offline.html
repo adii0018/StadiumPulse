@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StadiumPulse — Offline</title>
+  <style>
+    body { margin: 0; background: #0A1628; color: white; font-family: system-ui, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+    .container { max-width: 500px; text-align: center; }
+    h1 { font-size: 1.5rem; margin-bottom: 1rem; color: #00E5FF; }
+    p { color: rgba(255,255,255,0.6); line-height: 1.6; margin-bottom: 1.5rem; }
+    .gate-list { text-align: left; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 16px; margin-bottom: 20px; }
+    .gate-list h2 { font-size: 0.9rem; color: #39FF14; margin-bottom: 12px; }
+    .gate-item { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.85rem; }
+    .gate-item:last-child { border: none; }
+    .emergency { background: rgba(255,23,68,0.1); border: 1px solid rgba(255,23,68,0.2); border-radius: 8px; padding: 12px; font-size: 0.8rem; color: #FF6D00; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="font-size:3rem;margin-bottom:1rem">📡</div>
+    <h1>You're currently offline</h1>
+    <p>StadiumPulse AI features require an internet connection. Here's the essential stadium info you need:</p>
+
+    <div class="gate-list">
+      <h2>⚽ Gate Quick Reference</h2>
+      <div class="gate-item"><span>Gate 1 — North Main</span><span>Accessible ♿</span></div>
+      <div class="gate-item"><span>Gate 3 — East Fan Zone</span><span>High capacity</span></div>
+      <div class="gate-item"><span>Gate 6 — South Main</span><span>Accessible ♿</span></div>
+      <div class="gate-item"><span>Gate 8 — West Fan Zone</span><span>Accessible ♿</span></div>
+    </div>
+
+    <div class="gate-list">
+      <h2>🚇 Transit</h2>
+      <div class="gate-item"><span>Metro Line A</span><span>Gate 1, 2, 11</span></div>
+      <div class="gate-item"><span>Metro Line B</span><span>Gate 5, 6, 7</span></div>
+      <div class="gate-item"><span>Metro Line C</span><span>Gate 8, 9</span></div>
+    </div>
+
+    <div class="emergency">
+      🏥 Medical Emergency: +1-555-MED-911<br />
+      🚨 Security: +1-555-SEC-001<br />
+      👶 Lost Child: +1-555-SAFE-KID
+    </div>
+
+    <p style="margin-top:1.5rem;font-size:0.8rem">Connection will restore automatically. <a href="/" style="color:#00E5FF">Retry now</a></p>
+  </div>
+</body>
+</html>

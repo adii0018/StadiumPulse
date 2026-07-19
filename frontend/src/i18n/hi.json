@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "fanCompanion": "प्रशंसक साथी",
+    "opsDashboard": "ऑपरेशन डैशबोर्ड",
+    "brand": "StadiumPulse"
+  },
+  "fan": {
+    "title": "प्रशंसक साथी",
+    "subtitle": "FIFA विश्व कप 2026 के लिए आपका AI गाइड",
+    "placeholder": "स्टेडियम के बारे में कुछ भी पूछें...",
+    "send": "भेजें",
+    "listening": "सुन रहा है...",
+    "voiceStart": "वॉइस इनपुट शुरू करें",
+    "voiceStop": "सुनना बंद करें",
+    "navigate": "नेविगेट करें",
+    "from": "से (जैसे गेट 1)",
+    "to": "तक (जैसे सेक्शन 201)",
+    "findRoute": "रास्ता खोजें",
+    "accessibility": "सुलभता",
+    "simplifiedView": "सरल दृश्य",
+    "language": "भाषा",
+    "offline": "आप ऑफ़लाइन हैं",
+    "offlineMsg": "कैश किया गया स्टेडियम जानकारी दिखा रहे हैं। बुनियादी गेट जानकारी उपलब्ध है।",
+    "typeMessage": "अपना संदेश टाइप करें...",
+    "thinking": "StadiumPulse सोच रहा है...",
+    "errorMsg": "क्षमा करें, यह प्रोसेस नहीं हो सका। कृपया पुनः प्रयास करें।",
+    "clearChat": "चैट साफ़ करें",
+    "copyText": "कॉपी करें"
+  },
+  "ops": {
+    "title": "ऑपरेशन कमांड सेंटर",
+    "subtitle": "FIFA विश्व कप 2026 — रियल-टाइम स्टेडियम इंटेलिजेंस",
+    "login": "स्टाफ लॉगिन",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "loginBtn": "साइन इन करें",
+    "loginError": "अमान्य क्रेडेंशियल। admin@stadiumpulse.com / demo1234 उपयोग करें",
+    "logout": "साइन आउट",
+    "crowdDensity": "लाइव भीड़ घनत्व",
+    "alerts": "सक्रिय अलर्ट",
+    "recommendations": "AI सिफारिशें",
+    "noAlerts": "सभी गेट सामान्य रूप से चल रहे हैं",
+    "noRecs": "इस समय कोई सिफारिश नहीं",
+    "gateLabel": "गेट",
+    "occupancy": "अधिभोग",
+    "priority": "प्राथमिकता",
+    "action": "अनुशंसित कार्रवाई",
+    "relief": "अनुमानित राहत",
+    "staff": "आवश्यक स्टाफ",
+    "minutes": "मिनट",
+    "triggerAlert": "परीक्षण अलर्ट ट्रिगर करें",
+    "demoCredentials": "डेमो: admin@stadiumpulse.com / demo1234",
+    "refreshRecs": "सिफारिशें ताज़ा करें",
+    "alertLog": "अलर्ट लॉग",
+    "overallLoad": "कुल भार"
+  },
+  "severity": {
+    "critical": "गंभीर",
+    "high": "उच्च",
+    "medium": "मध्यम",
+    "low": "निम्न"
+  }
+}

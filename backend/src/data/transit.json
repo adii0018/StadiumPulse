@@ -1,0 +1,93 @@
+[
+  {
+    "id": "metro_line_A",
+    "name": "Metro Line A — North Express",
+    "type": "metro",
+    "stops": ["City Center Station", "Stadium North Station (Gate 1, Gate 2, Gate 11)"],
+    "frequency": "Every 4 minutes during match day",
+    "accessibilityEquipped": true,
+    "firstService": "14:00",
+    "lastService": "00:00",
+    "travelTimeFromCityMinutes": 22
+  },
+  {
+    "id": "metro_line_B",
+    "name": "Metro Line B — South Express",
+    "type": "metro",
+    "stops": ["Central Park Station", "Sports District Station", "Stadium South Station (Gate 5, Gate 6, Gate 7)"],
+    "frequency": "Every 5 minutes during match day",
+    "accessibilityEquipped": true,
+    "firstService": "13:30",
+    "lastService": "00:30",
+    "travelTimeFromCityMinutes": 18
+  },
+  {
+    "id": "metro_line_C",
+    "name": "Metro Line C — West Loop",
+    "type": "metro",
+    "stops": ["Airport Hub", "West Park Station", "Stadium West Station (Gate 8, Gate 9)"],
+    "frequency": "Every 6 minutes during match day",
+    "accessibilityEquipped": true,
+    "firstService": "13:00",
+    "lastService": "01:00",
+    "travelTimeFromCityMinutes": 35
+  },
+  {
+    "id": "shuttle_VIP",
+    "name": "VIP Shuttle Service",
+    "type": "shuttle",
+    "stops": ["Luxury Hotel District", "VIP Parking Zone A", "Gate 2 VIP Drop-off"],
+    "frequency": "On demand — pre-booked only",
+    "accessibilityEquipped": true,
+    "notes": "Contact VIP concierge at +1-555-FIFA-VIP"
+  },
+  {
+    "id": "shuttle_N",
+    "name": "North Fan Shuttle",
+    "type": "shuttle",
+    "stops": ["Fan Park North", "Overflow Parking N", "Gate 1", "Gate 11"],
+    "frequency": "Every 8 minutes",
+    "accessibilityEquipped": true,
+    "firstService": "15:00",
+    "lastService": "23:30"
+  },
+  {
+    "id": "shuttle_S",
+    "name": "South Fan Shuttle",
+    "type": "shuttle",
+    "stops": ["Fan Park South", "Overflow Parking S", "Gate 5", "Gate 6"],
+    "frequency": "Every 8 minutes",
+    "accessibilityEquipped": true,
+    "firstService": "15:00",
+    "lastService": "23:30"
+  },
+  {
+    "id": "bus_route_7",
+    "name": "Bus Route 7 — East Corridor",
+    "type": "bus",
+    "stops": ["Downtown Terminal", "East Residential Zone", "Gate 3", "Gate 10"],
+    "frequency": "Every 10 minutes",
+    "accessibilityEquipped": true,
+    "firstService": "14:00",
+    "lastService": "23:00"
+  },
+  {
+    "id": "bus_route_12",
+    "name": "Bus Route 12 — West Link",
+    "type": "bus",
+    "stops": ["University District", "Shopping Mall Stop", "Gate 7", "Gate 8"],
+    "frequency": "Every 12 minutes",
+    "accessibilityEquipped": false,
+    "firstService": "14:30",
+    "lastService": "23:00"
+  },
+  {
+    "id": "walk_north_plaza",
+    "name": "North Plaza Walking Route",
+    "type": "walk",
+    "stops": ["Fan Park Main Entrance", "North Plaza", "Gate 1"],
+    "estimatedWalkMinutes": 8,
+    "accessibilityEquipped": true,
+    "notes": "Fully paved, accessible, well-lit route with tactile guidance."
+  }
+]

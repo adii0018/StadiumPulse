@@ -1,0 +1,135 @@
+[
+  {
+    "id": "G1",
+    "name": "Gate 1 — North Main Entrance",
+    "location": "North Stand, Level 0",
+    "capacity": 2500,
+    "coordinates": { "lat": 40.7850, "lng": -73.9260 },
+    "accessibilityFeatures": ["wheelchair_ramp", "tactile_paving", "audio_announcements", "elevator"],
+    "nearbyFacilities": ["medical_M1", "restroom_N1", "transit_metro_line_A"],
+    "sections": ["101", "102", "103", "120", "121", "122"],
+    "staffing": { "security": 8, "stewards": 12, "medical": 2 }
+  },
+  {
+    "id": "G2",
+    "name": "Gate 2 — North VIP Entrance",
+    "location": "North Stand, Level 0, West Wing",
+    "capacity": 800,
+    "coordinates": { "lat": 40.7853, "lng": -73.9275 },
+    "accessibilityFeatures": ["wheelchair_ramp", "priority_lane", "elevator", "hearing_loop"],
+    "nearbyFacilities": ["medical_M1", "vip_lounge_V1", "transit_shuttle_VIP"],
+    "sections": ["VIP_A", "VIP_B"],
+    "staffing": { "security": 4, "stewards": 6, "medical": 1 }
+  },
+  {
+    "id": "G3",
+    "name": "Gate 3 — East Fan Zone",
+    "location": "East Stand, Level 0",
+    "capacity": 3000,
+    "coordinates": { "lat": 40.7845, "lng": -73.9240 },
+    "accessibilityFeatures": ["wheelchair_ramp", "tactile_paving"],
+    "nearbyFacilities": ["medical_M2", "restroom_E1", "restroom_E2", "transit_bus_route_7"],
+    "sections": ["201", "202", "203", "204", "205"],
+    "staffing": { "security": 10, "stewards": 15, "medical": 2 }
+  },
+  {
+    "id": "G4",
+    "name": "Gate 4 — East Premium",
+    "location": "East Stand, Level 1",
+    "capacity": 1200,
+    "coordinates": { "lat": 40.7842, "lng": -73.9238 },
+    "accessibilityFeatures": ["elevator", "wheelchair_ramp", "priority_lane"],
+    "nearbyFacilities": ["medical_M2", "premium_lounge_P1", "restroom_E1"],
+    "sections": ["210", "211", "212"],
+    "staffing": { "security": 5, "stewards": 8, "medical": 1 }
+  },
+  {
+    "id": "G5",
+    "name": "Gate 5 — South Family Zone",
+    "location": "South Stand, Level 0, East",
+    "capacity": 2200,
+    "coordinates": { "lat": 40.7830, "lng": -73.9255 },
+    "accessibilityFeatures": ["wheelchair_ramp", "tactile_paving", "baby_changing", "audio_announcements"],
+    "nearbyFacilities": ["medical_M3", "family_restroom_S1", "nursing_room_S1", "transit_shuttle_S"],
+    "sections": ["301", "302", "303", "320"],
+    "staffing": { "security": 7, "stewards": 12, "medical": 2 }
+  },
+  {
+    "id": "G6",
+    "name": "Gate 6 — South Main",
+    "location": "South Stand, Level 0, Center",
+    "capacity": 3500,
+    "coordinates": { "lat": 40.7828, "lng": -73.9265 },
+    "accessibilityFeatures": ["wheelchair_ramp", "tactile_paving", "elevator", "hearing_loop", "audio_announcements"],
+    "nearbyFacilities": ["medical_M3", "medical_M4", "restroom_S2", "restroom_S3", "transit_metro_line_B"],
+    "sections": ["310", "311", "312", "313", "314", "315"],
+    "staffing": { "security": 12, "stewards": 18, "medical": 3 }
+  },
+  {
+    "id": "G7",
+    "name": "Gate 7 — South West",
+    "location": "South Stand, Level 0, West",
+    "capacity": 2000,
+    "coordinates": { "lat": 40.7826, "lng": -73.9278 },
+    "accessibilityFeatures": ["wheelchair_ramp"],
+    "nearbyFacilities": ["medical_M4", "restroom_SW1", "transit_bus_route_12"],
+    "sections": ["321", "322", "323"],
+    "staffing": { "security": 6, "stewards": 10, "medical": 1 }
+  },
+  {
+    "id": "G8",
+    "name": "Gate 8 — West Fan Zone",
+    "location": "West Stand, Level 0",
+    "capacity": 2800,
+    "coordinates": { "lat": 40.7838, "lng": -73.9290 },
+    "accessibilityFeatures": ["wheelchair_ramp", "tactile_paving", "elevator"],
+    "nearbyFacilities": ["medical_M5", "restroom_W1", "restroom_W2", "transit_metro_line_C"],
+    "sections": ["401", "402", "403", "404", "405"],
+    "staffing": { "security": 9, "stewards": 14, "medical": 2 }
+  },
+  {
+    "id": "G9",
+    "name": "Gate 9 — West Premium",
+    "location": "West Stand, Level 1",
+    "capacity": 1000,
+    "coordinates": { "lat": 40.7841, "lng": -73.9293 },
+    "accessibilityFeatures": ["elevator", "priority_lane", "wheelchair_ramp", "hearing_loop"],
+    "nearbyFacilities": ["premium_lounge_P2", "medical_M5", "restroom_W1"],
+    "sections": ["410", "411", "412"],
+    "staffing": { "security": 4, "stewards": 7, "medical": 1 }
+  },
+  {
+    "id": "G10",
+    "name": "Gate 10 — North East Corner",
+    "location": "NE Corner, Level 0",
+    "capacity": 1800,
+    "coordinates": { "lat": 40.7848, "lng": -73.9243 },
+    "accessibilityFeatures": ["wheelchair_ramp", "tactile_paving"],
+    "nearbyFacilities": ["medical_M1", "restroom_NE1", "transit_bus_route_7"],
+    "sections": ["104", "105", "106"],
+    "staffing": { "security": 6, "stewards": 9, "medical": 1 }
+  },
+  {
+    "id": "G11",
+    "name": "Gate 11 — North West Corner",
+    "location": "NW Corner, Level 0",
+    "capacity": 1800,
+    "coordinates": { "lat": 40.7851, "lng": -73.9282 },
+    "accessibilityFeatures": ["wheelchair_ramp", "audio_announcements"],
+    "nearbyFacilities": ["medical_M1", "restroom_NW1", "transit_shuttle_N"],
+    "sections": ["115", "116", "117"],
+    "staffing": { "security": 6, "stewards": 9, "medical": 1 }
+  },
+  {
+    "id": "G12",
+    "name": "Gate 12 — Emergency / Staff Only",
+    "location": "South East Corner, Level 0",
+    "capacity": 500,
+    "coordinates": { "lat": 40.7832, "lng": -73.9248 },
+    "accessibilityFeatures": ["wheelchair_ramp"],
+    "nearbyFacilities": ["medical_M2", "command_center"],
+    "sections": [],
+    "staffing": { "security": 3, "stewards": 2, "medical": 1 },
+    "restrictedAccess": true
+  }
+]

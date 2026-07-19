@@ -1,0 +1,428 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Base Layer & Theme variables
+   ============================================================ */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Support for prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      animation-delay: -1ms !important;
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0s !important;
+      transition-delay: 0s !important;
+    }
+  }
+
+  body {
+    @apply antialiased;
+    font-family: 'Inter', 'Noto Sans Devanagari', system-ui, sans-serif;
+    background-color: #09090b;
+    color: #fafafa;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(16, 185, 129, 0.3);
+    color: #ffffff;
+  }
+
+  *:focus-visible {
+    outline: 2px solid rgba(16, 185, 129, 0.6) !important;
+    outline-offset: 2px !important;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  .eco-grid {
+    background-image: linear-gradient(to right, #ffffff08 1px, transparent 1px),
+                      linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, #000 70%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, #000 70%, transparent 100%);
+  }
+
+  /* Spinner utility — no border weirdness */
+  .sp-spinner {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+    border: 2px solid rgba(16, 185, 129, 0.25);
+    border-top-color: #10b981;
+    animation: spin 0.7s linear infinite;
+    flex-shrink: 0;
+  }
+
+  .sp-spinner-sm {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 9999px;
+    border: 2px solid rgba(16, 185, 129, 0.2);
+    border-top-color: #10b981;
+    animation: spin 0.7s linear infinite;
+    flex-shrink: 0;
+  }
+
+  .sp-spinner-gold {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+    border: 2px solid rgba(232, 163, 61, 0.2);
+    border-top-color: #E8A33D;
+    animation: spin 0.7s linear infinite;
+    flex-shrink: 0;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+}
+
+/* ============================================================
+   Custom Component Classes
+   ============================================================ */
+@layer components {
+
+  /* ---- Stadium Title ---- */
+  .stadium-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .brand-text-ops {
+    background: linear-gradient(135deg, #ffffff 0%, #34d399 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .brand-text-fan {
+    background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* ---- Glass Cards ---- */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255,255,255,0.06);
+    transition: border-color 0.2s ease-out, box-shadow 0.2s ease-out;
+  }
+
+  /* Light variant used in RouteCard (white bg context) */
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(16, 185, 129, 0.18);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease-out;
+  }
+
+  .glass-card:hover {
+    border-color: rgba(16, 185, 129, 0.3);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(16, 185, 129, 0.08);
+  }
+
+  /* ---- FIFA Section Divider ---- */
+  .fifa-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.4), rgba(232, 163, 61, 0.4), transparent);
+  }
+
+  /* ---- Action Buttons ---- */
+  .btn-pulse {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.35), inset 0 1px 0 rgba(255,255,255,0.15);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    white-space: nowrap;
+  }
+  .btn-pulse:hover:not(:disabled) {
+    background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+    transform: translateY(-1px) scale(1.03);
+    box-shadow: 0 0 32px rgba(16, 185, 129, 0.55), inset 0 1px 0 rgba(255,255,255,0.2);
+  }
+  .btn-pulse:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.06);
+    transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    white-space: nowrap;
+  }
+  .btn-ghost:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    transform: translateY(-1px) scale(1.03);
+  }
+  .btn-ghost:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+
+  /* ---- Small inline button variant (no oversized padding) ---- */
+  .btn-sm {
+    padding: 0.45rem 1rem !important;
+    font-size: 0.7rem !important;
+    border-radius: 0.75rem !important;
+  }
+
+  /* ---- Tab Active/Inactive ---- */
+  .tab-active {
+    background-color: #10b981;
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+  }
+
+  .tab-inactive {
+    color: rgba(250, 250, 250, 0.5);
+    background: transparent;
+  }
+
+  .tab-inactive:hover {
+    color: rgba(250, 250, 250, 0.85);
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  /* ---- Custom Scrollbars ---- */
+  .custom-scroll::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .custom-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+  }
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: rgba(16, 185, 129, 0.25);
+    border-radius: 4px;
+  }
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(16, 185, 129, 0.5);
+  }
+
+  /* ---- Live Indicator ---- */
+  .live-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: rgba(59, 126, 194, 0.1);
+    border: 1px solid rgba(59, 126, 194, 0.25);
+    color: #3B7EC2;
+  }
+
+  /* ---- Radar Sweep Effect ---- */
+  .radar-sweep-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .radar-sweep-container::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(to bottom,
+      transparent,
+      rgba(59, 126, 194, 0.025),
+      rgba(59, 126, 194, 0.04),
+      rgba(59, 126, 194, 0.025),
+      transparent);
+    animation: radarSweep 5s linear infinite;
+    pointer-events: none;
+  }
+
+  /* ---- Simplified View Overrides ---- */
+  .simplified {
+    font-size: 110% !important;
+  }
+
+  .simplified * {
+    font-family: 'Inter', 'Noto Sans Devanagari', sans-serif !important;
+    animation: none !important;
+    transition: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  .simplified .glass-card,
+  .simplified .glass-card-light {
+    background: #12181B !important;
+    color: #F5F7F4 !important;
+    border: 2px solid rgba(255,255,255,0.3) !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+  }
+
+  .simplified .btn-pulse {
+    background: #10b981 !important;
+    color: #ffffff !important;
+    border: 2px solid #10b981 !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+  }
+
+  .simplified .btn-ghost {
+    color: #F5F7F4 !important;
+    border: 2px solid rgba(255,255,255,0.4) !important;
+    border-radius: 4px !important;
+    background: transparent !important;
+  }
+
+  .simplified .grid,
+  .simplified .grid-cols-2,
+  .simplified .grid-cols-3,
+  .simplified .grid-cols-4,
+  .simplified .grid-cols-6,
+  .simplified .lg\:grid-cols-4,
+  .simplified .lg\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ---- 3D Flip Utilities ---- */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  .group-hover\:rotate-y-180:hover {
+    transform: rotateY(180deg);
+  }
+
+  /* ---- KPI Card accent ---- */
+  .kpi-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--kpi-color, #10b981);
+    opacity: 0.7;
+  }
+
+  /* ---- FIFA Badge ---- */
+  .fifa-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.25);
+    color: #34d399;
+  }
+
+  /* ---- Glowing Number ---- */
+  .glow-number {
+    filter: drop-shadow(0 0 12px currentColor);
+  }
+
+  /* ---- Section header gradient underline ---- */
+  .section-title-line {
+    position: relative;
+    display: inline-block;
+  }
+  .section-title-line::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #10b981, #E8A33D, transparent);
+    border-radius: 2px;
+  }
+}
+
+/* ============================================================
+   Keyframes
+   ============================================================ */
+@keyframes radarSweep {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(50%); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}

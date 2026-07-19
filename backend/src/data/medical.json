@@ -1,0 +1,103 @@
+[
+  {
+    "id": "M1",
+    "name": "Medical Post Alpha",
+    "location": "North Stand, Level 0, behind Gate 1",
+    "gateId": "G1",
+    "coordinates": { "lat": 40.7849, "lng": -73.9258 },
+    "capabilities": ["first_aid", "AED", "oxygen", "stretcher", "paramedic"],
+    "isWheelchairAccessible": true,
+    "phone": "+1-555-MED-0001",
+    "openDuringMatch": true,
+    "staffCount": 4
+  },
+  {
+    "id": "M2",
+    "name": "Medical Post Beta",
+    "location": "East Stand, Level 0, near Gate 3",
+    "gateId": "G3",
+    "coordinates": { "lat": 40.7844, "lng": -73.9241 },
+    "capabilities": ["first_aid", "AED", "oxygen", "stretcher", "paramedic", "physician"],
+    "isWheelchairAccessible": true,
+    "phone": "+1-555-MED-0002",
+    "openDuringMatch": true,
+    "staffCount": 5
+  },
+  {
+    "id": "M3",
+    "name": "Medical Post Gamma",
+    "location": "South Stand, Level 0, near Gate 5",
+    "gateId": "G5",
+    "coordinates": { "lat": 40.7831, "lng": -73.9254 },
+    "capabilities": ["first_aid", "AED", "oxygen"],
+    "isWheelchairAccessible": true,
+    "phone": "+1-555-MED-0003",
+    "openDuringMatch": true,
+    "staffCount": 3
+  },
+  {
+    "id": "M4",
+    "name": "Medical Center Delta — Primary Hospital Unit",
+    "location": "South Stand, Level 0, adjacent to Gate 6",
+    "gateId": "G6",
+    "coordinates": { "lat": 40.7829, "lng": -73.9264 },
+    "capabilities": ["first_aid", "AED", "oxygen", "stretcher", "paramedic", "physician", "xray_portable", "surgery_prep"],
+    "isWheelchairAccessible": true,
+    "phone": "+1-555-MED-0004",
+    "emergencyPhone": "+1-555-MED-911",
+    "openDuringMatch": true,
+    "staffCount": 12,
+    "notes": "Primary stadium hospital. Ambulance access via Gate 12."
+  },
+  {
+    "id": "M5",
+    "name": "Medical Post Epsilon",
+    "location": "West Stand, Level 0, near Gate 8",
+    "gateId": "G8",
+    "coordinates": { "lat": 40.7837, "lng": -73.9289 },
+    "capabilities": ["first_aid", "AED", "oxygen", "stretcher", "paramedic"],
+    "isWheelchairAccessible": true,
+    "phone": "+1-555-MED-0005",
+    "openDuringMatch": true,
+    "staffCount": 4
+  },
+  {
+    "id": "M6",
+    "name": "Accessible Care Suite",
+    "location": "North Stand, Level 1, near Elevator 1",
+    "gateId": "G1",
+    "coordinates": { "lat": 40.7851, "lng": -73.9261 },
+    "capabilities": ["first_aid", "AED", "sensory_room", "quiet_space", "disability_support"],
+    "isWheelchairAccessible": true,
+    "phone": "+1-555-MED-0006",
+    "openDuringMatch": true,
+    "staffCount": 2,
+    "notes": "Specialized suite for fans with sensory sensitivities, autism-friendly quiet space."
+  },
+  {
+    "id": "M7",
+    "name": "Mobile Medical Unit — Concourse A",
+    "location": "North-East Concourse",
+    "gateId": "G10",
+    "coordinates": { "lat": 40.7847, "lng": -73.9244 },
+    "capabilities": ["first_aid", "AED"],
+    "isWheelchairAccessible": false,
+    "phone": "+1-555-MED-0007",
+    "openDuringMatch": true,
+    "staffCount": 2,
+    "notes": "Mobile cart. Relocates based on crowd density."
+  },
+  {
+    "id": "M8",
+    "name": "Doping Control Center",
+    "location": "Underground Level, Gate 12 access",
+    "gateId": "G12",
+    "coordinates": { "lat": 40.7833, "lng": -73.9249 },
+    "capabilities": ["doping_control"],
+    "isWheelchairAccessible": true,
+    "phone": "+1-555-MED-0008",
+    "openDuringMatch": true,
+    "staffCount": 3,
+    "notes": "FIFA/WADA official doping control — player access only."
+  }
+]

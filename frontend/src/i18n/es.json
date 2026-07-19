@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "fanCompanion": "Compañero del Aficionado",
+    "opsDashboard": "Centro de Operaciones",
+    "brand": "StadiumPulse"
+  },
+  "fan": {
+    "title": "Compañero del Aficionado",
+    "subtitle": "Tu guía de IA para el Mundial FIFA 2026",
+    "placeholder": "Pregúntame lo que quieras sobre el estadio...",
+    "send": "Enviar",
+    "listening": "Escuchando...",
+    "voiceStart": "Iniciar entrada de voz",
+    "voiceStop": "Dejar de escuchar",
+    "navigate": "Navegar",
+    "from": "Desde (ej. Puerta 1)",
+    "to": "Hasta (ej. Sección 201)",
+    "findRoute": "Buscar Ruta",
+    "accessibility": "Accesibilidad",
+    "simplifiedView": "Vista Simplificada",
+    "language": "Idioma",
+    "offline": "Sin conexión",
+    "offlineMsg": "Mostrando información almacenada. Información básica de puertas disponible.",
+    "typeMessage": "Escribe tu mensaje...",
+    "thinking": "StadiumPulse está pensando...",
+    "errorMsg": "Lo siento, no pude procesar eso. Inténtalo de nuevo.",
+    "clearChat": "Limpiar Chat",
+    "copyText": "Copiar"
+  },
+  "ops": {
+    "title": "Centro de Operaciones",
+    "subtitle": "Mundial FIFA 2026 — Inteligencia en Tiempo Real",
+    "login": "Acceso al Personal",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "loginBtn": "Iniciar Sesión",
+    "loginError": "Credenciales inválidas. Usa admin@stadiumpulse.com / demo1234",
+    "logout": "Cerrar Sesión",
+    "crowdDensity": "Densidad de Multitud en Vivo",
+    "alerts": "Alertas Activas",
+    "recommendations": "Recomendaciones de IA",
+    "noAlerts": "Todas las puertas operando con normalidad",
+    "noRecs": "Sin recomendaciones en este momento",
+    "gateLabel": "Puerta",
+    "occupancy": "Ocupación",
+    "priority": "Prioridad",
+    "action": "Acción Recomendada",
+    "relief": "Alivio Estimado",
+    "staff": "Personal Requerido",
+    "minutes": "min",
+    "triggerAlert": "Activar Alerta de Prueba",
+    "demoCredentials": "Demo: admin@stadiumpulse.com / demo1234",
+    "refreshRecs": "Actualizar Recomendaciones",
+    "alertLog": "Registro de Alertas",
+    "overallLoad": "Carga General"
+  },
+  "severity": {
+    "critical": "CRÍTICO",
+    "high": "ALTO",
+    "medium": "MEDIO",
+    "low": "BAJO"
+  }
+}

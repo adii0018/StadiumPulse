@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "fanCompanion": "Fan Companion",
+    "opsDashboard": "Ops Dashboard",
+    "brand": "StadiumPulse"
+  },
+  "fan": {
+    "title": "Fan Companion",
+    "subtitle": "Your AI guide for FIFA World Cup 2026",
+    "placeholder": "Ask me anything about the stadium...",
+    "send": "Send",
+    "listening": "Listening...",
+    "voiceStart": "Start voice input",
+    "voiceStop": "Stop listening",
+    "navigate": "Navigate",
+    "from": "From (e.g. Gate 1)",
+    "to": "To (e.g. Section 201)",
+    "findRoute": "Find Route",
+    "accessibility": "Accessibility",
+    "simplifiedView": "Simplified View",
+    "language": "Language",
+    "offline": "You're offline",
+    "offlineMsg": "Showing cached stadium info. Basic navigation and gate info available below.",
+    "typeMessage": "Type your message...",
+    "thinking": "StadiumPulse is thinking...",
+    "errorMsg": "Sorry, I couldn't process that. Please try again.",
+    "clearChat": "Clear Chat",
+    "copyText": "Copy"
+  },
+  "ops": {
+    "title": "Ops Command Center",
+    "subtitle": "FIFA World Cup 2026 — Real-Time Stadium Intelligence",
+    "login": "Staff Login",
+    "email": "Email",
+    "password": "Password",
+    "loginBtn": "Sign In",
+    "loginError": "Invalid credentials. Use admin@stadiumpulse.com / demo1234",
+    "logout": "Sign Out",
+    "crowdDensity": "Live Crowd Density",
+    "alerts": "Active Alerts",
+    "recommendations": "AI Recommendations",
+    "noAlerts": "All gates operating normally",
+    "noRecs": "No recommendations at this time",
+    "gateLabel": "Gate",
+    "occupancy": "Occupancy",
+    "priority": "Priority",
+    "action": "Recommended Action",
+    "relief": "Est. Relief",
+    "staff": "Staff Required",
+    "minutes": "min",
+    "triggerAlert": "Trigger Test Alert",
+    "demoCredentials": "Demo: admin@stadiumpulse.com / demo1234",
+    "refreshRecs": "Refresh Recommendations",
+    "alertLog": "Alert Log",
+    "overallLoad": "Overall Load"
+  },
+  "severity": {
+    "critical": "CRITICAL",
+    "high": "HIGH",
+    "medium": "MEDIUM",
+    "low": "LOW"
+  }
+}
