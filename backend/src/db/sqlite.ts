@@ -18,7 +18,7 @@ let db: Database | null = null;
 let SQL: Awaited<ReturnType<typeof initSqlJs>> | null = null;
 
 const DB_PATH = join(process.cwd(), 'stadiumpulse.db.bin');
-const SCHEMA_PATH = join(__dirname, 'schema.sql');
+const SCHEMA_PATH = join(process.cwd(), 'src', 'db', 'schema.sql');
 
 /**
  * Returns the singleton sql.js database instance.

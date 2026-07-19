@@ -16,7 +16,7 @@ import { join } from 'path';
 import type { KnowledgeBaseDocument, RAGResult } from '../types';
 import { cacheService } from './cache.service';
 
-const DATA_DIR = join(__dirname, '..', 'data');
+const DATA_DIR = join(process.cwd(), 'src', 'data');
 
 /** Chunk size for splitting large documents into retrievable pieces */
 const CHUNK_SIZE = 500;
